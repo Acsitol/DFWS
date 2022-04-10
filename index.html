@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+        <link rel="stylesheet" href="styles/style.css"/>
+        <title>LNG</title>
+    </head>
+    <script src="scripts/LNG.js"></script> 
+    <body>
+        <h1>
+            DFWS
+        </h1>
+        <div class="group1">
+            <h3 class="title">
+                how many word
+            </h3>
+            <input type="text" id="numw">
+        </div>
+        <div class="group1">
+            <h3 class="title">
+                wordlist
+            </h3>
+            <input type="text" id="phonemeCV">
+            <input value="add" type="button" id="button7" onclick="clickButton7()">
+            <p class="title">
+                list
+            </p>
+            <textarea readonly id="phonemelistCV"></textarea>
+            <input value="clear" type="button" id="button8" onclick="clickButton8()">
+            <input value="undo" type="button" id="button9" onclick="clickButton9()">
+            <textarea readonly id="undoCV" hidden></textarea>
+        </div>
+        <div class="group1">
+            <h3 class="title">
+                translate
+            </h3>
+            <input type="text" id="translate">
+            <input value="add" type="button" id="button1" onclick="clickButton1()">
+            <p class="title">
+                list
+            </p>
+            <textarea readonly id="translatelist"></textarea>
+            <input value="clear" type="button" id="button2" onclick="clickButton2()">
+            <input value="undo" type="button" id="button3" onclick="clickButton3()">
+            <textarea readonly id="undotranslate" hidden></textarea>
+        </div>
+        <div class="group1">
+            <h3 class="title">
+                random
+            </h3>
+            <textarea readonly id="wordlist"></textarea>
+            <input value="create" type="button" id="button10" onclick="clickButton10()">
+            <textarea id="numt"></textarea>
+        </div>
+        <div class="group1">
+            <h3 class="title">
+                don't know
+            </h3>
+            <textarea readonly id="answer"></textarea>
+            <input value="yes" type="button" id="button4" onclick="clickButton4()">
+        </div>
+    </body>
+</html>
