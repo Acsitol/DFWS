@@ -1,13 +1,69 @@
-h1 {
-    color: azure
-}
 body {
-    background: black
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #f4f4f4;
 }
-.title {
-    background: azure;
-    color: block
+
+.centered {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
 }
-.group1 {
-    background: gray
+
+.hidden {
+  display: none;
 }
+
+header {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+#uploadSection {
+  padding: 20px;
+  text-align: center;
+}
+
+#sliderSection {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+}
+
+#slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  position: absolute;
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+}
+
+#slider img.active {
+  opacity: 1;
+}
+
+#interactionPopup {
+  position: fixed;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: white;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  z-index: 100;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+#interactionPopup textarea {
+  width: 200px;
+  height: 50px;
+  margin-bottom: 5px;
+}
+
